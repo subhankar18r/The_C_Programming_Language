@@ -9,6 +9,15 @@ struct student
     float cgpa;
 };
 
+// using typedef keyword to create a alias for structure data types
+typedef struct productsForResale
+{
+    char title[200];
+    float price;
+
+} pfr;
+// go to line 55
+
 void printInfo(struct student s1);
 
 int main()
@@ -42,6 +51,10 @@ int main()
 
     // passing structure as a function argument
     printInfo(s1);
+
+    pfr p1 = {"book", 12.9};
+
+    printf("\nprice of %s is %.2f\n", p1.title, p1.price);
 
     return 0;
 }
