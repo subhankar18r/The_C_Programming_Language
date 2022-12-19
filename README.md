@@ -1,1 +1,1 @@
-# 100-questions-in-c
+# All about c programming
