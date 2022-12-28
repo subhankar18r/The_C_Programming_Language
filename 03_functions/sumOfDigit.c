@@ -1,41 +1,21 @@
 #include <stdio.h>
-
 int sum(int a);
-int dec(int a);
-
 int main()
 {
-    int given_number;
-    printf("enter number: ");
-    scanf("%d", &given_number);
-    printf("sum is %d\n", sum(given_number));
-
+    int n;
+    printf("enter a integer: ");
+    scanf("%d", &n);
+    printf("sum of digits = %d\n", sum(n));
     return 0;
 }
-
 int sum(int a)
 {
-    int sum = 0, i = dec(a);
-    do
-    {
-        int b = a / i;
-        sum += b;
-        a -= b * i;
-        i /= 10;
-    } while (i != 0);
-
-    return sum;
-}
-
-int dec(int a)
-{
-    int i = 1;
-
+    int sum = 0;
     while (a != 0)
     {
-        a /= 10;
-        i *= 10;
+        int m = a % 10;
+        sum = sum + m;
+        a = a / 10;
     }
-
-    return i / 10;
+    return sum;
 }

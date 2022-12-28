@@ -7,17 +7,17 @@ int fibf(int n);
 
 int main()
 {
-    int a = 6;
-    printf("the %dth of fibonacci number is %d\n", a, fibf(a));
+    int a = 8;
+    printf("the %dth of fibonacci number is %d\n", a, fib(a));
 
     return 0;
 }
 
 int fib(int a)
 {
-    if (a == 0 || a == 1)
+    if (a == 1 || a == 2)
     {
-        return a;
+        return a - 1;
     }
 
     int prevN = fib(a - 1) + fib(a - 2);
@@ -32,7 +32,7 @@ int fibf(int n)
         return n;
     }
     int new, cur = 1, prev = 0;
-    for (int i = 2; i <= n; i++)
+    for (int i = 3; i <= n; i++)
     {
         new = cur + prev;
         prev = cur;
