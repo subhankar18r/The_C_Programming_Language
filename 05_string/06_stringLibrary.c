@@ -14,6 +14,6 @@ int main()
 
     printf("concatenate two strings %s\n", strcat(name, str));
 
-    printf("compare two strings %d\n", strcmp(name, dum));
+    printf("compare two strings %d\n", strcmp(dum, name));
     return 0;
 }

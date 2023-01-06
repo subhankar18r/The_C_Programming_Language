@@ -13,16 +13,16 @@ int main()
 
     // char str[] = "Rahul";
     //  str = "subhankar"; //character array's are not chageable
-    // not working
+    // NOT WORKING
 
     // char *str = "Rahul";
     // str = "Subhankar";
-    // working
+    // WORKING
 
     // char *str;
     // fgets(str, 20, stdin);
     // puts(str);
-    // not working
+    // NOT WORKING
 
     return 0;
 }
