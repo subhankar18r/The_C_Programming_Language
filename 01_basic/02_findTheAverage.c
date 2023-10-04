@@ -1,3 +1,5 @@
+// take three numbers and calculate the average of three numbers
+
 #include <stdio.h>
 
 int main()
@@ -9,7 +11,7 @@ int main()
     scanf("%f", &b);
     printf("enter number c \n");
     scanf("%f", &c);
-
-    printf("average is %f\n", (a + b + c) / 3);
+    float average = (a + b + c) / 3;
+    printf("average is %f\n", average);
     return 0;
 }

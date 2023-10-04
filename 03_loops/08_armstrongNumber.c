@@ -17,7 +17,6 @@ int main()
 
     if (temp == sum)
     {
-        /* code */
         printf("armstrong number\n");
     }
     else
