@@ -1,10 +1,11 @@
+// take a input from user and check wheter a number is a natural number or not
 #include <stdio.h>
 
 int main()
 {
-    int valid = 1, a;
+    int a;
     float given_number;
-    printf("enter number: \n");
+    printf("enter number: ");
     scanf("%f", &given_number);
     a = given_number;
     if (given_number > 0 && given_number - a == 0)
